@@ -19,4 +19,11 @@ public class UserRegistrationTest {
         boolean result = userRegistrationMain.lastNameValidate();
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void givenEmailAddress_WhenProper_ShouldReturnTrue(){
+        UserRegistrationMain userRegistrationMain = new UserRegistrationMain();
+        boolean result = userRegistrationMain.emailValidate()
+        Assertions.assertTrue(result);
+    }
 }
