@@ -44,7 +44,7 @@ public class UserRegistrationMain {
     }
 
     public boolean passwordValidate() {
-        System.out.print("Enter your Password : ");
+        System.out.print("Enter your Password to validate : ");
         String password = scanner.next();
         System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=[^@#$%^&+=]*[@#$%^&+=][^@#$%^&+=]*$)(?=.*[0-9]).{8,}$", password));
         return false;
