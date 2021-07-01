@@ -23,7 +23,14 @@ public class UserRegistrationTest {
     @Test
     public void givenEmailAddress_WhenProper_ShouldReturnTrue(){
         UserRegistrationMain userRegistrationMain = new UserRegistrationMain();
-        boolean result = userRegistrationMain.emailValidate()
+        boolean result = userRegistrationMain.emailValidate();
+        Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void givenMobileNumber_WhenProper_ShouldReturnTrue(){
+        UserRegistrationMain userRegistrationMain = new UserRegistrationMain();
+        boolean result = userRegistrationMain.mobileNumberValidate();
         Assertions.assertTrue(result);
     }
 }
