@@ -1,0 +1,2 @@
+com/bridgelabz/userregistrationmain/UserRegistrationMain.java
+ com.bridgelabz.userregistrationmain.UserRegistrationMain
