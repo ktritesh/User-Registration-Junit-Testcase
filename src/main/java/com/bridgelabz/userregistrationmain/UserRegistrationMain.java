@@ -12,6 +12,7 @@ public class UserRegistrationMain {
         userRegistrationMain.lastNameValidate();
         userRegistrationMain.emailValidate();
         userRegistrationMain.mobileNumberValidate();
+        userRegistrationMain.passwordValidate();
     }
 
     public boolean firstNameValidate() {
@@ -39,6 +40,13 @@ public class UserRegistrationMain {
         System.out.print("Enter your Mobile Number : ");
         String mobileNumber = scanner.next();
         System.out.println(Pattern.matches("^[+]{1}[0-9]{2}[ ][0-9]{10}", mobileNumber));
+        return false;
+    }
+
+    public boolean passwordValidate() {
+        System.out.print("Enter your Password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=[^@#$%^&+=]*[@#$%^&+=][^@#$%^&+=]*$)(?=.*[0-9]).{8,}$", password));
         return false;
     }
 }
